@@ -6,13 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+    
       fontFamily:{
-        Josefin_Sans:['Josefin Sans', 'sans-serif']
+        Lato:['Lato', 'sans-serif']
        
         
       },
+
       fontFamily:{
-        Lato:['Lato', 'sans-serif']
+        Josefin_Sans:['Josefin Sans', 'sans-serif']
        
         
       },

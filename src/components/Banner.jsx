@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <section className="relative">
-      <div className="w-full min-h-screen overflow-hidden">
+      <div className="w-full md:pb-20   overflow-hidden ">
         <Slider {...settings}>
           <div>
             <img 
@@ -55,3 +55,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
