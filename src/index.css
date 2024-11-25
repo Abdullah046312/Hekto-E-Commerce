@@ -13,4 +13,21 @@ html, body {
     overflow-y: auto;  /* Allow vertical scrolling */
    
   }
+
+
+  .hover-card:hover .image-wrapper {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .hover-card:hover .details h2 {
+    color: #6C63FF; /* Adjust to your preferred hover color */
+  }
+
+  
+  
+  
   

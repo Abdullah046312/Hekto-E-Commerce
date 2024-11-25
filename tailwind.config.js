@@ -19,11 +19,13 @@ export default {
         
       },
 
+      
 
 
-      // backgroundImage:{
-      //   'banner_pic': "url('./assets/banner.png')",
-      // },
+
+      backgroundImage:{
+        'images29': "url('./assets/images29.png')",
+      },
     },
   },
   plugins: [],
