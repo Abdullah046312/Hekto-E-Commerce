@@ -75,18 +75,19 @@ const Navber = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden'; // Disable scroll when menu is open
   };
 
   return (
     <section className="bg-white sticky top-0 z-50">
       <Container>
-        <div className="flex items-center justify-between p-5">
+        <div className="flex items-center justify-between p-5 cursor-pointer">
           {/* Logo Section */}
           <div className="w-1/3">
             <img src={logo} alt="Logo" className="w-auto h-10" />
           </div>
 
-          {/* Navigation Menu */}
+          {/* Navigation Menu (Hidden on Mobile) */}
           <div className="w-1/3 hidden md:flex justify-center">
             <ul className="flex gap-5">
               <li className="text-[16px] text-[#0D0E43] font-Lato font-medium hover:text-[#FB2E86]">Home</li>
@@ -114,12 +115,11 @@ const Navber = () => {
             </div>
           </div>
         </div>
-        
-        {/* Mobile Navbar Menu */}
+
+        {/* Mobile Navbar Menu (Hamburger icon on the right side) */}
         <div className="md:hidden flex justify-between items-center">
-          {/* Logo and Hamburger Icon */}
-          <div className="flex items-center gap-5">
-            {/* <img src={logo} alt="Logo" className="w-10 h-10" /> */}
+          {/* Logo and Hamburger Icon on the Right */}
+          <div className="flex items-center ml-auto gap-5 pb-5"> {/* Added pb-5 here */}
             <button onClick={toggleMenu}>
               {isMenuOpen ? (
                 <FaTimes className="text-[#0D0E43] text-2xl" />
@@ -133,7 +133,7 @@ const Navber = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden flex justify-center items-center bg-white py-4">
-            <ul className="flex flex-col gap-5 text-center">
+            <ul className="flex flex-col gap-5 text-center cursor-pointer">
               <li className="text-[16px] text-[#0D0E43] font-Josefin_Sans font-medium hover:text-[#FB2E86]">Home</li>
               <li className="text-[16px] text-[#0D0E43] font-Josefin_Sans font-medium hover:text-[#FB2E86]">Pages</li>
               <li className="text-[16px] text-[#0D0E43] font-Josefin_Sans font-medium hover:text-[#FB2E86]">Products</li>
@@ -149,4 +149,3 @@ const Navber = () => {
 };
 
 export default Navber;
-

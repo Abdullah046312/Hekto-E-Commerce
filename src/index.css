@@ -27,7 +27,17 @@ html, body {
     color: #6C63FF; /* Adjust to your preferred hover color */
   }
 
-  
+ 
+  html, body {
+    overflow: auto; /* Ensure scrolling is allowed */
+  }
+  .main-content {
+    min-height: 100vh; /* Ensure content takes up enough space to scroll */
+  }
+      
+  .slick-dots li button:before {
+    color: #FB2E86;  /* Custom dot color */
+  }
   
   
   

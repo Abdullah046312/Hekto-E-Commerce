@@ -9,6 +9,10 @@ import FourthPart from '../components/FourthPart'
 import FivethPart from '../components/FivethPart'
 import SixthPart from '../components/SixthPart'
 import SeventhPart from '../components/SeventhPart'
+import EightPart from '../components/EightPart'
+import NinePart from '../components/NinePart'
+
+import FooterPart from '../components/FooterPart'
 
 
 
@@ -19,8 +23,8 @@ const Home = () => {
 
   return (
    <>
-   <Header/>
-   <Navber/>
+   
+   
    <Banner/>
    <FirstPart/>
    <SecondPart/>
@@ -29,6 +33,10 @@ const Home = () => {
    <FivethPart/>
    <SixthPart/>
    <SeventhPart/>
+   <EightPart/>
+   <NinePart/>
+  
+  
 
 
    </>
