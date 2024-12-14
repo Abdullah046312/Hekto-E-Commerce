@@ -2,6 +2,8 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } 
 import Home from "./page/Home"
 import ShopPage from "./page/ShopPage"
 import Layout from "./components/Layout"
+import ProductsDetails from "./page/ProductsDetails"
+import Cart from "./page/Cart"
 
 
 
@@ -10,6 +12,8 @@ let router = createBrowserRouter(createRoutesFromElements(
 
     <Route index element= {<Home/>}></Route>
     <Route path="/shop" element={<ShopPage/>}></Route>
+    <Route path="/shop/:id" element={<ProductsDetails/>}></Route>
+    <Route path="/cart" element={<Cart/>}></Route>
   </Route>
   
 ))

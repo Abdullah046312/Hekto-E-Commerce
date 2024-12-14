@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../components/Header'
-import Navber from '../components/Navber'
+
+
 import Banner from '../components/Banner'
 import FirstPart from '../components/FirstPart'
 import SecondPart from '../components/SecondPart'
@@ -11,8 +11,10 @@ import SixthPart from '../components/SixthPart'
 import SeventhPart from '../components/SeventhPart'
 import EightPart from '../components/EightPart'
 import NinePart from '../components/NinePart'
+import FiveNew from '../components/FiveNew'
 
-import FooterPart from '../components/FooterPart'
+
+
 
 
 
@@ -31,6 +33,8 @@ const Home = () => {
    <ThirdPart/>
    <FourthPart/>
    <FivethPart/>
+   <FiveNew/>
+   
    <SixthPart/>
    <SeventhPart/>
    <EightPart/>
